@@ -1,0 +1,97 @@
+@font-face {
+	font-family: 'Yekan';
+	src: url('../fonts/Yekan.woff');
+}
+@font-face {
+	font-family: 'Dinar';
+	src: url('../fonts/Dinar.ttf');
+}
+
+body {
+	font-family: 'Yekan', 'Dinar';
+	margin: 0;
+	direction: rtl;
+}
+
+.container {
+	text-align: center;
+	display: flex;
+	height: 100vh;
+}
+
+.tools-box {
+	width: 20%;
+	background-color: #1A535C;
+	color: white;
+}
+
+.quiz-box {
+	padding: 20px;
+	width: 80%;
+}
+
+.quiz-box #question {
+	width: 350px;
+	height: 350px;
+}
+
+.quiz-box hr {
+	border-color: #1A535C;
+}
+
+.choices {
+	margin-top: 25px;
+}
+.choices > img {
+	cursor: pointer;
+	border: 3px solid white;
+	padding: 5px 0 5px 8px;
+	width: 100px;
+	height: 100px;
+}
+.choices > img:hover {
+	border-color: #FF6B6B;
+}
+
+.buttons {
+	margin-top: 20px;
+}
+
+.buttons > button {
+	background-color: white;
+	border: 2px solid #1A535C;
+	color: #1A535C;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: 0.4s;
+	font-family: 'Yekan';
+	margin: 0 5px;
+}
+
+.buttons > button:hover {
+	background-color: #1A535C;
+	color: white;
+}
+
+.navigator {
+	padding: 15px 0;
+}
+
+.navigator > a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	border: 1px solid white;
+	margin: 5px;
+	width: 30px;
+	transition: 0.4s;
+}
+
+.navigator > a:hover {
+	background-color: #FF6B6B;
+	border-color: #FF6B6B;
+}
+
+button:disabled {
+	cursor: not-allowed;
+}
